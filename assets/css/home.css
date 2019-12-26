@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    font-family: 'segoe ui';
+    color: seagreen;
+    height: 100%;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: rgb(233, 87, 233);
+    color: black;
+    font-size: 15px;
+}
+
+#wrap {
+    padding: 10px;
+    min-height: -webkit-calc(100% - 100px);
+    min-height: -moz-calc(100% - 100px);
+    min-height: calc(100% - 100px);
+}

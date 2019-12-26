@@ -1,0 +1,50 @@
+@media(max-width: 768px) {
+    #wrap {
+        color: black;
+        background-color: #B6DFE1;
+        background-size: cover;
+        background-size: contain;
+        background-size: 100% 100%;
+    }
+}
+
+@media(min-width:768px) {
+    #wrap {
+        color: black;
+        background: url(../images/contact.jpg) no-repeat;
+        background-size: cover;
+        background-size: contain;
+        background-size: 100% 100%;
+    }
+}
+
+#wrap>h2 {
+    font-size: 45px;
+    text-align: center;
+}
+
+#wrap>h4 {
+    padding-top: 10%;
+    font-size: 30px;
+    color: black;
+}
+
+#wrap>h5 {
+    font-size: 30px;
+    color: black;
+}
+
+.one {
+    font-size: 25px;
+    color: black;
+}
+
+.two {
+    font-size: 25px;
+    color: black;
+}
+
+.three {
+    font-size: 25px;
+    color: black;
+}

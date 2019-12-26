@@ -1,0 +1,44 @@
+@media(max-width: 768px) {
+    #wrap {
+        color: black;
+        background-color: #CA8F53;
+        background-size: cover;
+        background-size: contain;
+        background-size: 100% 100%;
+    }
+}
+
+@media(min-width:768px) {
+    #wrap {
+        color: black;
+        background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url(../images/cookies.jpeg) no-repeat;
+        background-size: cover;
+        background-size: contain;
+        background-size: 100% 100%;
+    }
+}
+
+#wrap>h3 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.first {
+    font-size: 30px;
+}
+
+.second {
+    font-size: 30px;
+}
+
+.one {
+    font-size: 20px;
+}
+
+.two {
+    font-size: 20px;
+}
+
+.three {
+    font-size: 20px;
+}

@@ -1,0 +1,60 @@
+@media(max-width: 768px) {
+    #wrap {
+        color: darkslategray;
+        background-color: #F8F8F8;
+        background-size: cover;
+        background-size: contain;
+        background-size: 100% 100%;
+    }
+    #wrap>h3 {
+        font-size: 50px;
+        text-align: center;
+    }
+    .one {
+        color: darkslategray;
+        font-size: 25px;
+    }
+    .two {
+        color: darkslategray;
+        font-size: 25px;
+    }
+    .three {
+        color: darkslategray;
+        font-size: 25px;
+    }
+    .four {
+        color: darkslategray;
+        font-size: 25px;
+    }
+}
+
+@media(min-width:768px) {
+    #wrap {
+        color: darkslategray;
+        background: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .3)), url(../images/terms.jpeg) no-repeat;
+        background-size: cover;
+        background-size: contain;
+        background-size: 100% 100%;
+    }
+    #wrap>h3 {
+        padding-bottom: 35%;
+        font-size: 50px;
+        text-align: center;
+    }
+    .one {
+        color: darkslategray;
+        font-size: 25px;
+    }
+    .two {
+        color: darkslategray;
+        font-size: 25px;
+    }
+    .three {
+        color: darkslategray;
+        font-size: 25px;
+    }
+    .four {
+        color: darkslategray;
+        font-size: 25px;
+    }
+}

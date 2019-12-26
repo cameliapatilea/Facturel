@@ -1,0 +1,53 @@
+.big-header {
+    color: black;
+}
+
+.big-header>.display {
+    font-size: 30px;
+}
+
+.big-header>p {
+    font-size: 20px;
+    color: darkgreen;
+}
+
+#wrap>h2 {
+    color: black;
+    text-align: center;
+    font-size: 40px;
+}
+
+.big-header>.one {
+    font-size: 20px;
+    color: black;
+}
+
+.two {
+    font-size: 20px;
+    color: black;
+}
+
+.three {
+    font-size: 20px;
+    color: black;
+}
+
+@media(max-width: 768px) {
+    #wrap {
+        color: black;
+        background-color: #AFBBAF;
+        background-size: cover;
+        background-size: contain;
+        background-size: 100% 100%;
+    }
+}
+
+@media(min-width:768px) {
+    #wrap {
+        color: blck;
+        background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url(../images/simple-photo.jpg) no-repeat;
+        background-size: cover;
+        background-size: contain;
+        background-size: 100% 100%;
+    }
+}

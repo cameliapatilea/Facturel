@@ -1,0 +1,214 @@
+html {
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 100px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.column {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.line {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+@media(max-width: 768px) {
+    .container {
+        max-width: 740px;
+    }
+}
+
+@media(min-width: 768px) {
+    .container {
+        min-width: 790px;
+        max-width: 1260px;
+    }
+}
+
+@media(min-width: 1280px) {
+    .container {
+        max-width: 1260px;
+    }
+}
+
+@media (max-width: 768px) {
+    .column-small-1 {
+        -ms-flex: 0 0 10%;
+        flex: 0 0 10%;
+        max-width: 10;
+    }
+    .column-small-2 {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20;
+    }
+    .column-small-3 {
+        -ms-flex: 0 0 30%;
+        flex: 0 0 30%;
+        max-width: 30;
+    }
+    .column-small-4 {
+        -ms-flex: 0 0 40%;
+        flex: 0 0 40%;
+        max-width: 40;
+    }
+    .column-small-5 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50;
+    }
+    .column-small-6 {
+        -ms-flex: 0 0 60%;
+        flex: 0 0 60%;
+        max-width: 60;
+    }
+    .column-small-7 {
+        -ms-flex: 0 0 70%;
+        flex: 0 0 70%;
+        max-width: 70;
+    }
+    .column-small-8 {
+        -ms-flex: 0 0 80%;
+        flex: 0 0 80%;
+        max-width: 80;
+    }
+    .column-small-9 {
+        -ms-flex: 0 0 90%;
+        flex: 0 0 90%;
+        max-width: 90;
+    }
+    .column-small-10 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100;
+    }
+}
+
+@media (min-width:768px) {
+    .column-medium-1 {
+        -ms-flex: 0 0 10%;
+        flex: 0 0 10%;
+        max-width: 10;
+    }
+    .column-medium-2 {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20;
+    }
+    .column-medium-3 {
+        -ms-flex: 0 0 30%;
+        flex: 0 0 30%;
+        max-width: 30;
+    }
+    .column-medium-4 {
+        -ms-flex: 0 0 40%;
+        flex: 0 0 40%;
+        max-width: 40;
+    }
+    .column-medium-5 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50;
+    }
+    .column-medium-6 {
+        -ms-flex: 0 0 60%;
+        flex: 0 0 60%;
+        max-width: 60;
+    }
+    .column-medium-7 {
+        -ms-flex: 0 0 70%;
+        flex: 0 0 70%;
+        max-width: 70;
+    }
+    .column-medium-8 {
+        -ms-flex: 0 0 80%;
+        flex: 0 0 80%;
+        max-width: 80;
+    }
+    .column-medium-9 {
+        -ms-flex: 0 0 90%;
+        flex: 0 0 90%;
+        max-width: 90;
+    }
+    .column-medium-10 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100;
+    }
+}
+
+@media (min-width:1280px) {
+    .column-large-1 {
+        -ms-flex: 0 0 10%;
+        flex: 0 0 10%;
+        max-width: 10;
+    }
+    .column-large-2 {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20;
+    }
+    .column-large-3 {
+        -ms-flex: 0 0 30%;
+        flex: 0 0 30%;
+        max-width: 30;
+    }
+    .column-large-4 {
+        -ms-flex: 0 0 40%;
+        flex: 0 0 40%;
+        max-width: 40;
+    }
+    .column-large-5 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50;
+    }
+    .column-large-6 {
+        -ms-flex: 0 0 60%;
+        flex: 0 0 60%;
+        max-width: 60;
+    }
+    .column-large-7 {
+        -ms-flex: 0 0 70%;
+        flex: 0 0 70%;
+        max-width: 70;
+    }
+    .column-large-8 {
+        -ms-flex: 0 0 80%;
+        flex: 0 0 80%;
+        max-width: 80;
+    }
+    .column-large-9 {
+        -ms-flex: 0 0 90%;
+        flex: 0 0 90%;
+        max-width: 90;
+    }
+    .column-large-10 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100;
+    }
+}

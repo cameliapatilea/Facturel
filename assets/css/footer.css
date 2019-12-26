@@ -1,0 +1,21 @@
+footer {
+    background: #007b5e;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+}
+
+footer h5 {
+    padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+footer a {
+    color: whitesmoke;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-slip: objects;
+}
