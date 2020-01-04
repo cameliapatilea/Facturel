@@ -1,0 +1,19 @@
+@media(max-width: 768px) {
+    #wrap {
+        color: black;
+        background-color: #AFBBAF;
+        background-size: cover;
+        background-size: contain;
+        background-size: 100% 100%;
+    }
+}
+
+@media(min-width:768px) {
+    #wrap {
+        color: blck;
+        background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url(../images/simple-photo.jpg) no-repeat;
+        background-size: cover;
+        background-size: contain;
+        background-size: 100% 100%;
+    }
+}
