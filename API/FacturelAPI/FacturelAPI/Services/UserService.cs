@@ -13,7 +13,7 @@ namespace FacturelAPI.Services
         User Authenticate(string username, string password);
         IEnumerable<User> GetAll();
         User GetById(int Id);
-        User Create(User user, string password);
+        User Create(User user, string password, string passwordConfirmation);
         void Delete(int id);
     }
     public class UserService : IUserService
@@ -52,11 +52,13 @@ namespace FacturelAPI.Services
             return _context.Users.Find(id);
         }
 
-        public User Create(User user, string password)
+        public User Create(User user, string password, string passwordConfirmation)
         {
             // validation
             if (string.IsNullOrWhiteSpace(password))
                 throw new AppException("Password is required");
+            if(password.Equals(passwordConfirmation) != true)
+               throw new AppException("The passwords must be the same!");
 
             if (_context.Users.Any(x => x.UserName == user.UserName))
                 throw new AppException("Username \"" + user.UserName + "\" is already taken");

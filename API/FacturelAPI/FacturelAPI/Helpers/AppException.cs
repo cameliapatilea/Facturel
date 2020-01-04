@@ -11,6 +11,7 @@ namespace FacturelAPI.Helpers
         public AppException() : base() { }
         public AppException(string message) : base(message) { }
 
+        //custom exceptions
         public AppException(string message, params object[] args):
             base(String.Format(CultureInfo.CurrentCulture, message, args))
         {
