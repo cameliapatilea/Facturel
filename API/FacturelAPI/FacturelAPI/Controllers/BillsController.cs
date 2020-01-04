@@ -63,14 +63,14 @@ namespace FacturelAPI.Controllers
 
 
         [AllowAnonymous]
-        [HttpPut("update")]
-        public IActionResult UpdateBill([FromBody] Bill model)
+        [HttpPut("update/{id}")]
+        public IActionResult UpdateBill([FromBody] Bill model, int id)
         {
             if (ModelState.IsValid)
             {
                 try
                 {
-                    var bill = _billService.UpdateBill(model);
+                    var bill = _billService.UpdateBill(model, id);
                     if (bill == null)
                     {
                         return BadRequest();
@@ -88,8 +88,8 @@ namespace FacturelAPI.Controllers
         }
 
         [AllowAnonymous]
-        [HttpGet("getById")]
-        public IActionResult GetById([FromBody] int id)
+        [HttpGet("getById/{id}")]
+        public IActionResult GetById(int id)
         {
             try
             {
@@ -128,8 +128,8 @@ namespace FacturelAPI.Controllers
         }
 
         [AllowAnonymous]
-        [HttpDelete("delete")]
-        public IActionResult Delete([FromBody] int id)
+        [HttpDelete("delete/{id}")]
+        public IActionResult Delete( int id)
         {
             try
             {

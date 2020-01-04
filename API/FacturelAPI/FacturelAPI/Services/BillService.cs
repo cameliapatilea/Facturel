@@ -14,7 +14,7 @@ namespace FacturelAPI.Services
         IEnumerable<Bill> GetAll();
         Bill GetById(int id);
         Bill AddBill(Bill bill);
-        Bill UpdateBill(Bill billParam);
+        Bill UpdateBill(Bill billParam, int id);
         void Delete(int id);
     }
     public class BillService: IBillService
@@ -53,9 +53,9 @@ namespace FacturelAPI.Services
 
             return bill;
         }
-        public Bill UpdateBill(Bill billParam)
+        public Bill UpdateBill(Bill billParam, int id)
         {
-            var bill = _context.Bills.Find(billParam.Id);
+            var bill = _context.Bills.Find(id);
             if(bill == null)
                 throw new AppException("Bill not found!");
 
