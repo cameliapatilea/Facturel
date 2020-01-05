@@ -1,3 +1,23 @@
+@media(max-width: 768px) {
+    #wrap {
+        color: black;
+        background-color: #5898D2;
+        background-size: cover;
+        background-size: contain;
+        background-size: 100% 100%;
+    }
+}
+
+@media(min-width:768px) {
+    #wrap {
+        color: black;
+        background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url(../images/wall-e.jpg) no-repeat;
+        background-size: cover;
+        background-size: contain;
+        background-size: 100% 100%;
+    }
+}
+
 * {
     box-sizing: border-box;
 }
@@ -26,4 +46,14 @@ body {
     min-height: -webkit-calc(100% - 100px);
     min-height: -moz-calc(100% - 100px);
     min-height: calc(100% - 100px);
+}
+
+#wrap>h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+#wrap>h4 {
+    text-align: center;
+    font-size: 30px;
 }

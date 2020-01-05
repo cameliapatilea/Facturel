@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/header.css">
     <link rel="icon" type="image/x-icon" href="../assets/images/icon.jpg">
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
 
 </head>
 
@@ -22,12 +23,14 @@
             <h3><b>Hello! My name is Facturel. I am your virtual assistant and I want to help you manage your bills! Let's get started!</b></h3>
         </div>
     </header>
-    <div class="nav">
+    <nav class="nav">
         <input type="checkbox" id="nav-check">
         <div class="nav-header">
             <div class="nav-title">
-                <img src="../assets/images/icon.png" style=" width: 55px;">
-                <b>Facturel</b>
+                <a href="home.html" class="link-no-style" style="color:white">
+                    <img src="../assets/images/icon.png" style=" width: 55px;" alt="Facturel">
+                    <b>Facturel</b>
+                </a>
             </div>
         </div>
         <div class="nav-btn">
@@ -38,11 +41,11 @@
                 </label>
         </div>
         <div class="nav-links">
-            <a>Add a bill</a>
-            <a>See the galery of bills</a>
-            <a>Sign in/Register</a>
+            <a href="add-bill.html">Add a bill</a>
+            <a href="bills.html">View all bills</a>
+
         </div>
-    </div>
+    </nav>
     <main id="wrap">
         <form>
             Username:
@@ -50,6 +53,7 @@
             <input type="text" name="username"><br> Password:
             <br>
             <input type="text" name="password">
+            <input type="submit" value="Log In">
         </form>
     </main>
     <footer>
@@ -57,19 +61,23 @@
             <div class="line">
                 <div class="column column-small-10 column-medium-4 column-large-4">
                     <h5>About Us & Contact Us</h5>
-                    <ul class="list-unstyled quick-links"></ul>
-                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Contact Us</a></li>
-                    <li><a href="#"><i class = "fa fa-angle-double-right"></i>About Us</a></li>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="contact-us.html"><i class="fa fa-angle-double-right"></i>Contact Us</a></li>
+                        <li><a href="about-us.html"><i class = "fa fa-angle-double-right"></i>About Us</a></li>
 
+                    </ul>
+                    <br>
                 </div>
                 <div class="column column-small-10 column-medium-2 column-large-2"></div>
                 <div class="column column-small-10 column-medium-4 column-large-4">
                     <h5>
                         Terms and conditions
                     </h5>
-                    <ul class="list-unstyled quick-links"></ul>
-                    <li><a href="#"><i class = "fa fa-angle-double-right"></i>Terms and Conditions</a></li>
-                    <li><a href="#"><i class = "fa fa-angle-double-right"></i>Cookies policy</a></li>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="terms-cond.html"><i class = "fa fa-angle-double-right"></i>Terms and Conditions</a></li>
+                        <li><a href="cookies.html"><i class = "fa fa-angle-double-right"></i>Cookies policy</a></li>
+                    </ul>
+                    <br>
                 </div>
             </div>
         </div>

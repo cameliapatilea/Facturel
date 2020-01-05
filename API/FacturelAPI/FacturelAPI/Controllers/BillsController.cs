@@ -128,6 +128,31 @@ namespace FacturelAPI.Controllers
         }
 
         [AllowAnonymous]
+        [HttpPut("changeIsPaidValue/{id}")]
+        public IActionResult ChangeIsPaidValue(int id)
+        {
+            try
+            {
+                var bill = _billService.GetById(id);
+
+                if (bill == null)
+                {
+                    return BadRequest();
+                }
+
+                bill.IsPaid = !bill.IsPaid;
+
+                _billService.UpdateBill(bill, id);
+
+                return Ok(bill);
+            }
+            catch
+            {
+                return BadRequest();
+            }
+        }
+
+        [AllowAnonymous]
         [HttpDelete("delete/{id}")]
         public IActionResult Delete( int id)
         {
